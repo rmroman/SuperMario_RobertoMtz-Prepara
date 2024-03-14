@@ -5,7 +5,10 @@ using UnityEngine;
 public class MoverPersonaje : MonoBehaviour
 {
     // Define la velocidad de movimiento en X y Y
-    public float velocidadX = 5.0f;
+    public float velocidadX {
+        get;
+        private set;
+    }
     public float velocidadY = 5.0f;
 
     // Define la referencia al RigidBody
